@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    background-color: #DADFE5;
+}
+.header{
+    background-color: #DADFE5;
+    color: #F12136;
+    text-align: center;
+    font-size: 40px;
+    border-bottom: 5px solid #F12136;
+}
+.button{
+    font-size: 20px;
+    background-color: #DADFE5;
+    color: #F12136;
+    border-radius: 10px;
+    border: 3px solid #F12136;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+.group{
+    display: flex;
+}
+.container{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+}
+.grid{
+    background-color: white; 
+}
+
+.row{
+    display: flex;
+}
+.color{
+    background-color: cadetblue;
+}
+.colors{
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    display: flex;
+}
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+.green{
+    background-color: green;
+}
+.color-container{
+    display: flex;
+}
+.c-container{
+    margin-left: 50px;
+}
