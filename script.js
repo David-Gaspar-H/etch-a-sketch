@@ -4,6 +4,7 @@
 //then we have our grid I THINK
 
 function runIt(){
+    //selecting color
     let color = 'red';
     const red = document.querySelector('.red');
     const blue = document.querySelector('.blue');
@@ -18,9 +19,11 @@ function runIt(){
         color = 'blue';
     });
 
+//Prompting user for grid size
     do {
         userChoice = prompt("Please choose the dimension of your square ie: entering 16 would make a 16 by 16 square");
     } while (userChoice > 100);
+//filling container with boxes
     let dimension = 500/(userChoice);
     let container = document.querySelector(".container");
     if(container.childNodes.length != 0){
@@ -40,6 +43,7 @@ function runIt(){
             row.appendChild(div);
         }
     }
+    //interacting between user and canvas
     const boxes = Array.from(document.querySelectorAll('.grid'));
     //boxes.forEach(box => box.setAttribute('style', `width: ${dimension}; height: white;`));
     boxes.forEach(box => box.addEventListener('mouseover', () => {
