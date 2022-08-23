@@ -5,10 +5,13 @@
 
 function runIt(){
     //selecting color
+    //add a way to pick color by just choosing from like a spectrum type thing
     let color = 'red';
     const red = document.querySelector('.red');
     const blue = document.querySelector('.blue');
     const green = document.querySelector('.green');
+    const black = document.querySelector('.black');
+    const rainbow = document.querySelector('.rainbow');
     red.addEventListener('click', () =>{
         color = 'red';
     });
@@ -18,14 +21,22 @@ function runIt(){
     blue.addEventListener('click', () =>{
         color = 'blue';
     });
+    black.addEventListener('click', () =>{
+        color = 'black';
+    });
+    rainbow.addEventListener('click', () =>{
+        color = 'rainbow';
+        console.log(color);
+    });
 
 //Prompting user for grid size
     do {
-        userChoice = prompt("Please choose the dimension of your square ie: entering 16 would make a 16 by 16 square");
+        userChoice = prompt('Please choose the dimension of your square ie: entering 16 would make a 16 by 16 square');
     } while (userChoice > 100);
-//filling container with boxes
+//setting up to make grid
     let dimension = 500/(userChoice);
-    let container = document.querySelector(".container");
+    let container = document.querySelector('.container');
+//clearing last grid if there is one
     if(container.childNodes.length != 0){
         let grid = document.querySelectorAll('.grid');
         grid.forEach(ting => {
@@ -47,11 +58,29 @@ function runIt(){
     const boxes = Array.from(document.querySelectorAll('.grid'));
     //boxes.forEach(box => box.setAttribute('style', `width: ${dimension}; height: white;`));
     boxes.forEach(box => box.addEventListener('mouseover', () => {
-        box.style.backgroundColor = `${color}`
+        if(color == 'rainbow'){
+            let numb1 = Math.floor(Math.random() * 500);
+            let numb2 = Math.floor(Math.random() * 500);
+            let numb3 = Math.floor(Math.random() * 500);
+            box.style.backgroundColor = `rgb(${numb1}, ${numb2}, ${numb3})`
+            
+        }
+
+        else{
+            box.style.backgroundColor = `${color}`
+        }
+
     }));
     boxes.forEach(box => box.addEventListener('contextmenu', function(ev) {
         ev.preventDefault();
         box.style.backgroundColor = 'white';
         return false;
     }));
+}
+function save(){
+    //read up on canvases and try copying whatever 
+    //user draws onto canvas and saving that as 
+    //an image, though I dont know how that will work
+    //maybe a way to screenshot just a 
+    //certain section of the users screen
 }

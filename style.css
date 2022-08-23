@@ -16,8 +16,9 @@ body{
     border-radius: 10px;
     border: 3px solid #d5c1ed;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin-left: 30px;
+
 }
 .group{
     display: flex;
@@ -53,6 +54,12 @@ body{
 }
 .green{
     background-color: green;
+}
+.black{
+    background-color: black;
+}
+.rainbow{
+    background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red);
 }
 .color-container{
     display: flex;
