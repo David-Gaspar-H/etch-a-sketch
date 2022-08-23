@@ -1,20 +1,20 @@
 body{
     margin: 0;
-    background-color: #DADFE5;
+    background-color: #1c5d69;
 }
 .header{
-    background-color: #DADFE5;
-    color: #F12136;
+    background-color: #1c5d69;
+    color: #d5c1ed;
     text-align: center;
     font-size: 40px;
-    border-bottom: 5px solid #F12136;
+    border-bottom: 5px solid #d5c1ed;
 }
 .button{
     font-size: 20px;
-    background-color: #DADFE5;
-    color: #F12136;
+    background-color: #1c5d69;
+    color: #d5c1ed;
     border-radius: 10px;
-    border: 3px solid #F12136;
+    border: 3px solid #d5c1ed;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 30px;
@@ -37,7 +37,7 @@ body{
     display: flex;
 }
 .color{
-    background-color: cadetblue;
+    background-color: red;
 }
 .colors{
     width: 20px;
@@ -59,4 +59,7 @@ body{
 }
 .c-container{
     margin-left: 50px;
+}
+.pickem{
+    color: #d5c1ed;
 }
