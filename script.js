@@ -26,17 +26,16 @@ function runIt(){
     });
     rainbow.addEventListener('click', () =>{
         color = 'rainbow';
-        console.log(color);
     });
 
-//Prompting user for grid size
+    //Prompting user for grid size
     do {
         userChoice = prompt('Please choose the dimension of your square ie: entering 16 would make a 16 by 16 square');
     } while (userChoice > 100);
-//setting up to make grid
+    //setting up to make grid
     let dimension = 500/(userChoice);
     let container = document.querySelector('.container');
-//clearing last grid if there is one
+    //clearing last grid if there is one
     if(container.childNodes.length != 0){
         let grid = document.querySelectorAll('.grid');
         grid.forEach(ting => {
@@ -77,10 +76,14 @@ function runIt(){
         return false;
     }));
 }
-function save(){
-    //read up on canvases and try copying whatever 
-    //user draws onto canvas and saving that as 
-    //an image, though I dont know how that will work
-    //maybe a way to screenshot just a 
-    //certain section of the users screen
+function clearGrid(){
+    let container = document.querySelector('.container');
+    if(container.childNodes.length != 0){
+        let grid = document.querySelectorAll('.grid');
+        grid.forEach(ting => {
+            ting.style.backgroundColor = 'white';
+        })
+        return;
+    }
+    return;
 }

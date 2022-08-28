@@ -65,8 +65,14 @@ body{
     display: flex;
 }
 .c-container{
-    margin-left: 50px;
+    margin-left: 100px;
 }
 .pickem{
     color: #d5c1ed;
+}
+.sign-in{
+    margin-top:0px;
+    margin-left: 50px;
+    font-size: medium;
+
 }
