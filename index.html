@@ -14,13 +14,13 @@
     <div class="main">
         <div class="container">
             <div class="navbar">
-                <input type="color" class="color">
-                <button class="clearButton">Clear</button>
-                <button class="clearButton">Rainbow</button>
+                <input type="color" class="color" value="#000000">
+                <button class="clearButton" onclick="clearGrid()">Clear</button>
+                <button class="rainbow">Rainbow</button>
                 <div class="slidecontainer">
                     <div class="data-1">Brush Size</div>
-                    <input type="range" min="1" max="100" value="50" class="slider" id="brush">
-                    <div class="data-3">10</div>
+                    <input type="range" min="1" max="10" value="1" class="slider" id="brush">
+                    <div class="data-3">1x1</div>
                 </div>
                 <div class="slidecontainer">
                     <div class="data-1">Canvas Size</div>
