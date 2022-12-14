@@ -41,7 +41,7 @@ sizeSlide.onchange = function() {
     const canvasSize = document.querySelector('.data-2');
     canvasSize.textContent = size + "x" + size;
     const pixeles = document.querySelectorAll('.pixel');
-    pixeles.forEach(pixel => pixel.addEventListener('click', () => {
+    pixeles.forEach(pixel => pixel.addEventListener('mouseover', () => {
         if(color == 'rainbow'){
             let numb1 = Math.floor(Math.random() * 500);
             let numb2 = Math.floor(Math.random() * 500);
